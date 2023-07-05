@@ -1,0 +1,223 @@
+.name {
+    font: normal bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 5px;
+    color: rgb(133, 20, 20);
+    text-transform: capitalize;
+    font-size: 44px;
+    margin-left: 430px;
+
+}
+
+.from-content {
+    min-height: calc(100%-80px);
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blueviolet;
+    
+}
+
+.from {
+    width: 65%;
+    padding: 50px 60px;
+    background: lightyellow;
+    box-shadow: 0px 3px 6px silver;
+    border: 2px solid green;
+    border-radius: 10px;
+    opacity: 1;
+
+}
+
+.from-head {
+    font: normal bold 24px/37px Robot;
+    letter-spacing: 0px;
+    color: black;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.label {
+    min-width: 10px;
+}
+
+label {
+    padding: 12px 12px 12px;
+    display: inline-block;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(24, 19, 24);
+    opacity: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input {
+    width: 70%;
+    padding: 5px;
+    border-radius: 4px;
+    resize: vertical;
+
+}
+
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.name1 {
+    margin-left: 124px;
+}
+
+.name2 {
+    margin-left: 57px;
+}
+
+.name3 {
+    margin-left: 115px;
+}
+
+.name4 {
+    margin-left: 79px;
+}
+
+.name5 {
+    margin-left: 120px;
+}
+
+.name6 {
+    margin-left: 93px;
+}
+
+.name7 {
+    margin-left: 126px;
+}
+
+.select {
+    padding: 12px;
+    font-weight: bold;
+    border: 2px solid rgb(53, 44, 32);
+    border-radius: 4px;
+    resize: vertical;
+    font: normal 16px Roboto;
+    letter-spacing: 0px;
+    color: rgb(41, 16, 16);
+    background-color: transparent;
+}
+
+
+.buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: black;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.submitButton {
+    border: none;
+    background-color: lightgreen;
+    margin-left: 400px;
+}
+
+.resetButton {
+    border: none;
+    background-color: lightgray;
+    margin-left: 33px;
+}
+
+.cancelButton {
+    border: none;
+    background-color: lightcoral;
+}
+
+@media only screen and(max-width:960px) {
+    .cancelButton {
+        margin-left: 0px;
+    }
+
+    .from {
+        width: 85%;
+        padding: 44px 20px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .from {
+        margin-top: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .uploadButton {
+        justify-content: flex-start;
+    }
+
+    .profile-radio-button {
+        flex-flow: wrap;
+    }
+
+    .submit-reset {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .submitButton {
+        margin: 0;
+    }
+
+    .buttonParent {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .error-output {
+        margin-left: 10px;
+        font-size: 12px;
+        font-style: italic;
+        color: red;
+    }
+}
